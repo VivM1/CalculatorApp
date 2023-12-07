@@ -70,4 +70,8 @@ dependencies {
     // ViewModel utilities for Compose
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
     implementation ("androidx.activity:activity-ktx:1.8.1")
+
+    // splash screen resources
+    implementation("androidx.core:core-splashscreen:1.0.0")
+
 }

@@ -17,6 +17,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.calculator.ui.theme.CalculatorTheme
@@ -31,6 +32,7 @@ class MainActivity : ComponentActivity() {
 //        enableEdgeToEdge(statusBarStyle, navigationBarStyle)
 
         super.onCreate(savedInstanceState)
+        installSplashScreen()
         setContent {
             CalculatorTheme {
                 val viewModel = viewModel<CalculatorViewModel>()
